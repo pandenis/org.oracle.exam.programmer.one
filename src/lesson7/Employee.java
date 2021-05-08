@@ -1,7 +1,7 @@
 package lesson7;
 
 public class Employee {
-    protected double salary;
+     double salary;
 
     protected void doubleSalary() {
         double res = salary * 2;
