@@ -1,13 +1,14 @@
 package lesson7;
 
 public class Employee {
-    public double salary;
+    protected double salary;
 
-    public void doubleSalary() {
-        System.out.println("New salary: " + salary * 2);
+    protected void doubleSalary() {
+        double res = salary * 2;
+        System.out.println("New salary: " + res);
     }
 
-    public Employee(double salary) {
+    Employee(double salary) {
         this.salary = salary;
     }
 
