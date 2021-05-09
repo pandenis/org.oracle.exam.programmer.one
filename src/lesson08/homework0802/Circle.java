@@ -15,7 +15,7 @@ public class Circle {
     void printCircle(int r) {
 
         System.out.println("The radius of circle is: " + r);
-        System.out.println("The square of circle when radius is" + r + "equal to" + this.squareCalc(r));
+        System.out.println("The square of circle when radius is" + r + "equal to" + squareCalc(r));
         System.out.println("The circumference of circle when radius is" + r + "equal to" + circumferenceCalc(r));
     }
 }
