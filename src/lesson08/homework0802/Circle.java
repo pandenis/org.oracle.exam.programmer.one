@@ -5,7 +5,7 @@ public class Circle {
 
 
     double squareCalc (int r) {
-        return pi * r + r;
+        return pi * r * r;
     }
 
     static double circumferenceCalc (int r) {
