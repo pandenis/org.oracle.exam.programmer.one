@@ -1,8 +1,8 @@
 package lesson08.homework0801;
 
 public class Test0801 {
-    public String sum(int a, int b, int c) {
-        return "The sum is: " + (a + b + c);
+    public String multiply(int a, int b, int c) {
+        return "The multiply is: " + (a * b * c);
     }
 
     public void devise(int a, int b) {
