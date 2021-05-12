@@ -1,9 +1,9 @@
 package lesson11;
 
 public class Student {
-    String name;
-    int course;
-    double grade;
+    public String name;
+    public int course;
+    public double grade;
 
     public Student(String name, int course, double grade) {
         this.name = name;
