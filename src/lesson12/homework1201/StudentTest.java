@@ -18,10 +18,10 @@ public class StudentTest {
             str += "The names of students are different.";
 
             if (!(st1.course == st2.course)) {
-                str += " The courses of students are different.";
+                str += "\nThe courses of students are different.";
 
                 if (!(st1.grade == st2.grade)) {
-                    str += " The grades of students are different.";
+                    str += "\nThe grades of students are different.";
                     System.out.println(str);
                 }
             }
