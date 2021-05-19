@@ -12,8 +12,10 @@ public class Mails {
             if (a == '@') {
                 int s = list.indexOf(';');
                 String domain = list.substring(0, s).substring(++i);
-                list = list.substring(++s);
                 System.out.println(domain);
+
+                list = list.substring(++s);
+
                 i = 0;
             }
         }
