@@ -9,12 +9,15 @@ public class Homework1701 {
     }
 
     public static boolean equality2(StringBuilder sb1, StringBuilder sb2) {
-        boolean result = false;
+        boolean result = true;
         if (sb1.length() == sb2.length()) {
             for (int i = 0; i < sb1.length(); i++) {
-                result = sb1.charAt(i) == sb2.charAt(i);
+                if (sb1.charAt(i) != sb2.charAt(i)) {
+                    result = false;
+                    break;
+                }
             }
-        }
+        } else result = false;
 
         return result;
     }
@@ -27,6 +30,7 @@ public class Homework1701 {
 
         StringBuilder sb4 = new StringBuilder("12345");
         StringBuilder sb5 = new StringBuilder("12345").reverse();
+        StringBuilder sb6 = new StringBuilder("12346");
 
         boolean b = equality2(sb1, sb2);
         System.out.println(b);
@@ -34,6 +38,8 @@ public class Homework1701 {
         System.out.println(b1);
         boolean b2 = equality2(sb4, sb5);
         System.out.println(b2);
+        boolean b3 = equality(sb4, sb6);
+        System.out.println(b3);
 
 
         /*System.out.println(equality(sb1, sb2));
