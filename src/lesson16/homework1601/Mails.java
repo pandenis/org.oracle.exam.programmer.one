@@ -7,13 +7,15 @@ public class Mails {
         list = list.trim();
 
         for (int i = 0; i < list.length(); i++) {
-            char a = list.charAt(i);
+            char at = list.charAt(i);
 
-            if (a == '@') {
-                int s = list.indexOf(';');
-                String domain = list.substring(0, s).substring(++i);
-                list = list.substring(++s);
+            if (at == '@') {
+                int dot = list.indexOf('.');
+                String domain = list.substring(++i, dot);
                 System.out.println(domain);
+
+                list = list.substring(list.indexOf(';') + 1);
+
                 i = 0;
             }
         }
@@ -21,6 +23,6 @@ public class Mails {
 
     public static void main(String[] args) {
         Mails mails = new Mails();
-        mails.email("ya@yahoo.com; on@mail.com; ona@gmail.com;");
+        mails.email("ya@yahoo.com; on@mail.ru; ona@gmail.com;");
     }
 }
