@@ -10,8 +10,39 @@ public class Test2 {
         list.add("ok");
         list.add(1,"HELLO");
 
-        for (String string : list) {
-            System.out.print(string + " ");
+
+        System.out.println("list.get(3): " +list.get(3));
+
+        list.set(1, "Denis");
+
+        for (String s : list) {
+            System.out.print(s + " ");
         }
+
+        System.out.println("\n/____________________/");
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("Tom");
+        arrayList.add("Smith");
+
+        list.addAll(arrayList);
+
+        for (String s : list) {
+            System.out.println(s + " ");
+        }
+
+        System.out.println();
+
+
+
+/*
+      list.remove("ok");
+
+        for (String s : list) {
+            System.out.print(s + " ");
+        }
+*/
+
+
     }
 }
