@@ -13,17 +13,13 @@ public class Homework2001 {
                 }
         }
         Collections.sort(arrayList);
+        System.out.println(arrayList);
 
         return arrayList;
     }
 
     public static void main(String[] args) {
         ArrayList<String> arrayList = abc("q", "w", "e", "r", "t", "e", "w");
-
-        for (String s : arrayList) {
-            System.out.println(s);
-        }
-
 
     }
 }
