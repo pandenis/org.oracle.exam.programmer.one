@@ -31,15 +31,18 @@ class Employee {
     String name = "Tom";
     int age;
     int experience;
+
     void eat() {
         System.out.println("Eating");
     }
+
     void sleep() {
         System.out.println("Sleep");
     }
 }
-class Doctor extends Employee{
-    void toHeal(){
+
+class Doctor extends Employee {
+    void toHeal() {
         System.out.println("Heals");
     }
 }
@@ -62,8 +65,9 @@ class Driver extends Employee {
     }
 }
 
-class Surgeon extends Doctor{
+class Surgeon extends Doctor {
     String scalpel;
+
     void operates() {
         System.out.println("Operates");
     }
