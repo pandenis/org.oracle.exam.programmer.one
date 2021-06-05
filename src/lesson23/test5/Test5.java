@@ -1,6 +1,13 @@
 package lesson23.test5;
 
 public class Test5 {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+        e.sleep(); //e s
+        Employee t = new Teacher();
+        t.sleep(); // t s
+
+    }
 
 }
 class Food{}
@@ -10,14 +17,14 @@ class Employee {
     double salary = 100;
     String name = "Tom";
 
-    Food eat() {
+   public Food eat() {
         System.out.println("Employee eating");
         Food f = new Food();
         return f;
     }
 
-    private void sleep() {
-        System.out.println("Sleep");
+    final void sleep() {
+        System.out.println("Employee Sleep");
     }
 }
 
@@ -31,10 +38,17 @@ class Teacher extends Employee {
         return f;
     }
 
-
+/*    @Override : parent method is final
+    protected void sleep() {
+        System.out.println("Teacher sleep!");
+    }*/
 
     void teach() {
         System.out.println("Teach");
     }
 }
+
+class T{}
+
+class P extends T {}
 
