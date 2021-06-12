@@ -16,6 +16,6 @@ public class Test4 {
 
     public static void main(String[] args) {
         Y a = new Y();
-        abc(a, a);
+//      abc(a, a);
     }
 }
